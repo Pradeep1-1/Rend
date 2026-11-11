@@ -1,0 +1,264 @@
+
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6fb;
+  color: #26334d;
+}
+
+/* Login Page */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #e8efff, #dce8ff);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 45px 35px;
+  text-align: center;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(30, 60, 120, 0.12);
+}
+
+.login-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.login-card h1 {
+  color: #243b70;
+  margin-bottom: 12px;
+}
+
+.login-card p {
+  color: #7b8498;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #315ee8;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #2148bd;
+  transform: translateY(-2px);
+}
+
+.login-card .login-footer {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.navbar h2 {
+  color: #294da9;
+  font-size: 22px;
+}
+
+.logout-btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #e74c4c;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #c93636;
+}
+
+/* Welcome Section */
+
+.welcome-section {
+  text-align: center;
+  padding: 50px 20px 35px;
+}
+
+.welcome-section h1 {
+  color: #263e7a;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.welcome-section p {
+  color: #7b8498;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* User Section */
+
+.user-section {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 25px 55px;
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+.section-heading h2 {
+  color: #263e7a;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.section-heading p {
+  color: #7b8498;
+}
+
+/* User Cards */
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.user-card {
+  background: white;
+  padding: 28px 22px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #edf0f7;
+  transition: 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(40, 70, 130, 0.12);
+}
+
+.user-avatar {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6edff;
+  color: #315ee8;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.user-card h3 {
+  color: #263e7a;
+  font-size: 19px;
+  margin-bottom: 16px;
+}
+
+.user-details p {
+  color: #68748b;
+  font-size: 14px;
+  margin-bottom: 11px;
+  overflow-wrap: anywhere;
+}
+
+.user-details strong {
+  color: #354563;
+}
+
+.user-status {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #e4f8eb;
+  color: #218348;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 22px;
+  color: #8a93a6;
+  background: white;
+  font-size: 13px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  .user-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px 5%;
+  }
+
+  .navbar h2 {
+    font-size: 17px;
+  }
+
+  .logout-btn {
+    padding: 9px 15px;
+  }
+
+  .welcome-section {
+    padding: 35px 15px;
+  }
+
+  .welcome-section h1 {
+    font-size: 24px;
+  }
+
+  .user-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .user-section {
+    padding: 15px 18px 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 22px;
+  }
+}
